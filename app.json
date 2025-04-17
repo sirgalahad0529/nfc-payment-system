@@ -26,7 +26,7 @@
       "package": "com.nfcpayments.app",
       "permissions": [
         "NFC",
-	"android.permission.NFC",
+        "android.permission.NFC",
         "android.permission.VIBRATE"
       ]
     },
@@ -35,10 +35,20 @@
     },
     "plugins": [
       [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          }
+        }
+      ],
+      [
         "react-native-nfc-manager",
-    	{
-	   "androidPermission": "Allow NFC scanning"
-    	}
+        {
+          "androidPermission": "Allow NFC scanning"
+        }
       ]
     ],
     "extra": {

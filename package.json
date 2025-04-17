@@ -37,4 +37,11 @@
     "@babel/core": "^7.20.0"
   },
   "private": true
+  "resolutions": {
+    "expo-modules-autolinking": "1.5.0"
+  },
+  "overrides": {
+    "expo-modules-autolinking": "1.5.0"
+ }
+
 }
